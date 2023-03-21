@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F172C6E629C99AEC003EFBC6 /* CookingAppUIDesignApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6E529C99AEC003EFBC6 /* CookingAppUIDesignApp.swift */; };
-		F172C6E829C99AEC003EFBC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6E729C99AEC003EFBC6 /* ContentView.swift */; };
+		F172C6E629C99AEC003EFBC6 /* CookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6E529C99AEC003EFBC6 /* CookingApp.swift */; };
 		F172C6EA29C99AEF003EFBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F172C6E929C99AEF003EFBC6 /* Assets.xcassets */; };
 		F172C6ED29C99AEF003EFBC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F172C6EC29C99AEF003EFBC6 /* Preview Assets.xcassets */; };
+		F172C6F729C9A1BA003EFBC6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6F629C9A1BA003EFBC6 /* LoginView.swift */; };
+		F172C6FA29C9C300003EFBC6 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6F929C9C300003EFBC6 /* Image.swift */; };
+		F172C6FC29C9C397003EFBC6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6FB29C9C397003EFBC6 /* Color.swift */; };
+		F172C6FF29C9C84F003EFBC6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C6FE29C9C84F003EFBC6 /* WelcomeView.swift */; };
+		F172C70229C9C9A7003EFBC6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172C70129C9C9A6003EFBC6 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F172C6E229C99AEC003EFBC6 /* CookingAppUIDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingAppUIDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F172C6E529C99AEC003EFBC6 /* CookingAppUIDesignApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingAppUIDesignApp.swift; sourceTree = "<group>"; };
-		F172C6E729C99AEC003EFBC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F172C6E529C99AEC003EFBC6 /* CookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingApp.swift; sourceTree = "<group>"; };
 		F172C6E929C99AEF003EFBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F172C6EC29C99AEF003EFBC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F172C6F629C9A1BA003EFBC6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F172C6F929C9C300003EFBC6 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		F172C6FB29C9C397003EFBC6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F172C6FE29C9C84F003EFBC6 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F172C70129C9C9A6003EFBC6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,8 @@
 		F172C6E429C99AEC003EFBC6 /* CookingAppUIDesign */ = {
 			isa = PBXGroup;
 			children = (
-				F172C6E529C99AEC003EFBC6 /* CookingAppUIDesignApp.swift */,
-				F172C6E729C99AEC003EFBC6 /* ContentView.swift */,
+				F172C6F329C9A0A5003EFBC6 /* Features */,
+				F172C6E529C99AEC003EFBC6 /* CookingApp.swift */,
 				F172C6E929C99AEF003EFBC6 /* Assets.xcassets */,
 				F172C6EB29C99AEF003EFBC6 /* Preview Content */,
 			);
@@ -65,6 +73,58 @@
 				F172C6EC29C99AEF003EFBC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F172C6F329C9A0A5003EFBC6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F172C6F429C9A0AB003EFBC6 /* Base */,
+				F172C6F529C9A19F003EFBC6 /* Auth */,
+				F172C6FD29C9C83A003EFBC6 /* Welcome */,
+				F172C70029C9C986003EFBC6 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F172C6F429C9A0AB003EFBC6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F172C6F829C9C2F3003EFBC6 /* Extensions */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F172C6F529C9A19F003EFBC6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F172C6F629C9A1BA003EFBC6 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F172C6F829C9C2F3003EFBC6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F172C6F929C9C300003EFBC6 /* Image.swift */,
+				F172C6FB29C9C397003EFBC6 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F172C6FD29C9C83A003EFBC6 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F172C6FE29C9C84F003EFBC6 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F172C70029C9C986003EFBC6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F172C70129C9C9A6003EFBC6 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F172C6E829C99AEC003EFBC6 /* ContentView.swift in Sources */,
-				F172C6E629C99AEC003EFBC6 /* CookingAppUIDesignApp.swift in Sources */,
+				F172C6FF29C9C84F003EFBC6 /* WelcomeView.swift in Sources */,
+				F172C6F729C9A1BA003EFBC6 /* LoginView.swift in Sources */,
+				F172C6FC29C9C397003EFBC6 /* Color.swift in Sources */,
+				F172C70229C9C9A7003EFBC6 /* HomeView.swift in Sources */,
+				F172C6FA29C9C300003EFBC6 /* Image.swift in Sources */,
+				F172C6E629C99AEC003EFBC6 /* CookingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
