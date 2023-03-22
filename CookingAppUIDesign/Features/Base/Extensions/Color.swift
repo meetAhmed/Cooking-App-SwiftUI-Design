@@ -15,4 +15,8 @@ extension Color {
     static var AppYellowColor: Color {
         Color("AppYellowColor")
     }
+    
+    static var AppLightGrayColor: Color {
+        Color("AppLightGrayColor")
+    }
 }
