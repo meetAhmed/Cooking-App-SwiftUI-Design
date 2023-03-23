@@ -11,4 +11,5 @@ class HomeViewModel: ObservableObject {
     @Published var recent = RecipeService.instance.getRecent()
     @Published var recommended = RecipeService.instance.getRecommended()
     @Published var selectedRecipe: Recipe? = nil
+    @Published var searchText = ""
 }

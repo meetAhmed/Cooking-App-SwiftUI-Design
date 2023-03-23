@@ -33,6 +33,7 @@ struct LoginView: View {
                     .padding(.top, 30)
                 TextField("", text: $emailTextField)
                     .padding(15)
+                    .foregroundColor(.AppYellowColor)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.white)
@@ -43,6 +44,7 @@ struct LoginView: View {
                     .padding(.top)
                 TextField("", text: $passwordTextField)
                     .padding(15)
+                    .foregroundColor(.AppYellowColor)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .fill(.white)

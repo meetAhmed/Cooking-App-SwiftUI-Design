@@ -30,7 +30,8 @@ struct HomeView: View {
             HStack {
                 HStack {
                     Image(systemName: "magnifyingglass")
-                    Text("Find recipes or chef")
+                    TextField("Find recipes or chef", text: $vm.searchText)
+                        .foregroundColor(.AppYellowColor)
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
