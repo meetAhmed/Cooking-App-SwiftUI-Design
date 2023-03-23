@@ -56,12 +56,7 @@ struct RecipeDetailsView: View {
                         .padding(.top)
                   
                     ForEach(recipe.ingredients, id: \.self) { ingredient in
-                        HStack(alignment: .center) {
-                            Circle()
-                                .frame(width: 8, height: 8)
-                            Text(ingredient)
-                            Spacer()
-                        }
+                        IngredientView(ingredient: ingredient)
                     }
                     
                     Spacer()

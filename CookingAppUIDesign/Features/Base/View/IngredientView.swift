@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct IngredientView: View {
+    let ingredient: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .center) {
+            Circle()
+                .frame(width: 8, height: 8)
+            Text(ingredient)
+            Spacer()
+        }
     }
 }
 
 struct IngredientView_Previews: PreviewProvider {
     static var previews: some View {
-        IngredientView()
+        IngredientView(ingredient: "Example")
     }
 }
